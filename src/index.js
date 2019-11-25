@@ -1,23 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const Header = () => {
-  return(
-    <h1> ToDo list</h1>
-    )
-}
-const Search = () => {
-  return(
-    <input placeholder='search'/>
-    )
-}
-const ToDoList = () => {
-  return(
-    <ul>
-      <li> Learn React </li>
-    </ul>
-    )
-}
+import Header from './components/Header.js'
+import Search from './components/Search.js'
+import ToDoList from './components/ToDoList.js'
+
 const App = () => {
   return(
     <div>
