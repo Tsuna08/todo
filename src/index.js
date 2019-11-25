@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import Header from './components/Header.js'
 import Search from './components/Search.js'
-import ToDoList from './components/ToDoList.js'
+import ToDoList from './components/ToDoList/ToDoList.js'
 
 const toDoData = [
   {label: 'Learn React', important: false, id: 1},
