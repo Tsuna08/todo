@@ -4,8 +4,11 @@ import ToDoListItem from './ToDoListItem.js'
 
 const ToDoList = ({toDo}) => {
   const elements = toDo.map(item => {
+    const { id, ... itemProps } = item
+    
     return (
-      <li><ToDoListItem { ... item } />
+      <li key={item.id}>
+        <ToDoListItem { ... itemProps } />
       </li>
       )
     })

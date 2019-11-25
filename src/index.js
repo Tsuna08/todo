@@ -6,8 +6,8 @@ import Search from './components/Search.js'
 import ToDoList from './components/ToDoList.js'
 
 const toDoData = [
-  {label: 'Learn React', important: false},
-  {label: 'Drink coffee', important: false}
+  {label: 'Learn React', important: false, id: 1},
+  {label: 'Drink coffee', important: false, id: 2}
 ]
 
 const App = () => {
