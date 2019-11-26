@@ -5,7 +5,7 @@ import './ToDoList.sass'
 
 const ToDoList = ({toDo}) => {
   const elements = toDo.map(item => {
-    const { id, ... itemProps } = item
+    const { id, ...itemProps } = item
     
     return (
       <li key={item.id} className='list-group-item'>
