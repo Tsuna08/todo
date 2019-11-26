@@ -4,16 +4,13 @@ import './ToDoListItem.sass'
 
 class ToDoListItem extends Component {
   // Что бы передать this в функцию можно делать так: 
-  
   // constructor() {
   //   super()
   //   this.onLabelClick = () => {
   //     console.log(`Done: ${this.props.label}`)
   //   }
   // }
-
   state = { done: false }
-
   // А можно так. Этот вариант мне больше нравится
   onLabelClick = () => this.setState({ done: true })  
   render() {
