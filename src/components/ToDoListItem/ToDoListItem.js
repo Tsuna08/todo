@@ -12,14 +12,21 @@ class ToDoListItem extends Component {
   //   }
   // }
 
+  state = { done: false }
+
   // А можно так. Этот вариант мне больше нравится
-  onLabelClick = () => { console.log(`Done: ${this.props.label}`) }
-  
+  onLabelClick = () => this.setState({ done: true })  
   render() {
-    const {label, important = false} = this.props
+    const { label, important = false } = this.props
+    const { done } = this.state
+
+    let className = ''
+    if(done) className += 'done '
+    if(important) className += 'important '
+    
     return(
       <span 
-        className={important ? 'important' : null} 
+        className={className} 
         onClick={this.onLabelClick}>
         {label}
       </span>
