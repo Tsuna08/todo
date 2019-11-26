@@ -1,11 +1,15 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-const ToDoListItem = ({label, important = false}) => {
+import './ToDoListItem.sass'
 
-  const style = { color: important ?  'tomato' : 'black' }
-  return(
-      <span style={style}>{label}</span>
+class ToDoListItem extends Component {
+  render() {
+    const {label, important = false} = this.props
+
+    return(
+      <span className={important ? 'important' : null}>{label}</span>
     )
+  }
 }
 
 export default ToDoListItem
